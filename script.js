@@ -12,7 +12,7 @@ var passwordErrorMsg = document.querySelector("#passwordErrorMsg");
 
 var button = document.querySelector("#confirm");
 button.addEventListener("click", ()=>{
-    console.log(password1.value);
+    
     
     if(firstName.value ==""){
         nameErrorMsg.classList.remove("hidden");
@@ -21,34 +21,45 @@ button.addEventListener("click", ()=>{
     }
 
     if(email.value ==""){
-        console.log("Email is required");
+        emailErrorMsg.firstElementChild.innerText = "Email addresss is required";
         emailErrorMsg.classList.remove("hidden");
     }
     else if(email.validity.valid == false){
-        console.log("Email is not valid");
+        emailErrorMsg.firstElementChild.innerText = "Email addresss is not valid";
         emailErrorMsg.classList.remove("hidden");
+    }else{
+        emailErrorMsg.classList.add("hidden");
     }
     
     if(phone.value == ""){
-        console.log("phone number is required");
+        phoneErrorMsg.firstElementChild.innerText = "Phone number is required";
         phoneErrorMsg.classList.remove("hidden");
     }
     else if(!phone.validity.valid){
-        console.log("Phone number is not valid");
+        phoneErrorMsg.firstElementChild.innerText = "Phone number is not valid";
         phoneErrorMsg.classList.remove("hidden");
+    }
+    else{
+        phoneErrorMsg.classList.add("hidden");
     }
 
     if(password1.value == ""){
-        console.log("please enter a password");
+        passwordErrorMsg.firstElementChild.innerText = "Password is required";
         passwordErrorMsg.classList.remove("hidden");
         
     }
     else if(password1.value != password2.value){
-        console.log("passwords dont match");
+        passwordErrorMsg.firstElementChild.innerText = "Passwords dont match";
         passwordErrorMsg.classList.remove("hidden");
+        
     }
     else{
-        alert("Thanks we will be in touch shortly");
+        passwordErrorMsg.classList.add("hidden");
+                
+    }
+
+    if(firstName.validity.valid && email.validity.valid && phone.validity.valid && password1.value!= "" && (password1.value == password2.value)){
+        window.alert("Thank you!! We will be in touch shortly.");
     }
 });
 

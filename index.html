@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./normalise.css">
     <link rel="stylesheet" href="style.css">
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
     <title>Book a test drive</title>
 </head>
 <body>
@@ -19,7 +19,7 @@
     </div>
     <div class="main">
         <div class="blurb">
-            <h1>Book a test drive</h1>
+            <h1>Create new account</h1>
             <p>This is not a real booking service! You know you need something like this in your life to help you realise your deepsest dreams. Sign up now to get started</p>
             <p>You know you want to.</p>
         </div>
@@ -40,21 +40,29 @@
                         </div>
                     </div>
                 </div>
-                
+                <div id="nameErrorMsg" class="error hidden">
+                    <p>First name is required!!</p>
+                </div>
                 
                 <div class="form-group field-Email">
                     <label for="Email" class="text-label">EMAIL<span class="required">*</span><span class="tooltip-element" tooltip="Email">?</span></label>
-                    <input type="email" placeholder="Email" class="form-control" name="Email" access="false" maxlength="50" id="Email" title="Email" required="required" aria-required="true">
+                    <input type="email" placeholder="Email" class="form-control" name="Email" access="false" maxlength="50" id="email" title="Email" required="required" aria-required="true">
+                </div>
+                <div id="emailErrorMsg" class="error hidden">
+                    <p>Email address is not valid!!</p>
                 </div>
                 <div class="text form-group field-phoneNumber">
                     <label for="phoneNumber" class="label">PHONE NUMBER<span class="tooltip-element" tooltip="Phone Number">?</span></label>
                     <input type="tel" placeholder="Phone Number" class="form-control" name="phoneNumber" access="false" id="phoneNumber" title="Phone Number" pattern="[0-9]{5,20}">
                 </div>
+                <div id="phoneErrorMsg" class="error hidden">
+                    <p>Phone number is required!!</p>
+                </div>
                 <div class="password">
                     <div>
                         <div class="form-group field-Password">
                             <label for="Password" class="text-label">PASSWORD<span class="required">*</span><span class="tooltip-element" tooltip="Password">?</span></label>
-                            <input type="password" placeholder="Password" class="form-control" name="Password" access="false" id="Password" title="Password" required="required" aria-required="true">
+                            <input type="password" placeholder="Password" class="form-control" name="Password" access="false" id="password" title="Password" required="required" aria-required="true">
                         </div>
                     </div>
                     <div>
@@ -63,6 +71,9 @@
                             <input type="password" placeholder="Confirm Password" class="form-control" name="confirmPassword" access="false" id="confirmPassword" title="Confirm Password" required="required" aria-required="true">
                         </div>
                     </div>
+                </div>
+                <div id="passwordErrorMsg" class="error hidden">
+                    <p>Sorry, passwords dont match!!</p>
                 </div>
                 
                 

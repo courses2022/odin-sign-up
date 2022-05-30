@@ -69,7 +69,7 @@ button:hover{
 
 .form{
     margin-right: 50px;
-    margin-left: 25px;
+    margin-left: 30px;
     max-width: 600px;
 }
 .form-control{
@@ -114,4 +114,13 @@ label{
 .field-confirm{
     margin-top: 30px;
     margin-left: 3px;
+}
+
+.error{
+    color: var(--rust);
+    margin-top: 5px;
+}
+
+.hidden{
+    display: none;
 }

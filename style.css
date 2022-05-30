@@ -2,7 +2,7 @@
 
     --dark-gray:#040708;
     --orange-peel:#FD9E03;
-    --silver-chalise:#B0ABA5;
+    --silver-chalise:rgb(176, 171, 165);
     --rust:#A43400;
 }
 
@@ -18,12 +18,26 @@ body{
     background: url(./car_img.jpg);
     background-size: cover;
     height: 100vh;
+    
 }
 
 .hero> img{
     min-height: 150vh;
     opacity: 0.5;
 }
+
+.hero>div{
+    position: relative;
+    top: 30vh;
+    color: white;
+    background-color: rgba(176, 171, 165, 0.4);
+    width: 100%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    padding: 15px 0;
+}
+
 .main{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 20px;
@@ -49,9 +63,14 @@ button{
     padding: 10px 20px;
 }
 
+button:hover{
+    background-color: var(--orange-peel);
+}
+
 .form{
     margin-right: 50px;
     margin-left: 25px;
+    max-width: 600px;
 }
 .form-control{
     padding: 5px 10px;
@@ -59,10 +78,7 @@ button{
 }
 
 input {
-    -webkit-transition: all 0.30s ease-in-out;
-    -moz-transition: all 0.30s ease-in-out;
-    -ms-transition: all 0.30s ease-in-out;
-    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
     outline: none;
     padding: 3px 0px 3px 3px;
     margin: 5px 1px 3px 0px;
@@ -75,6 +91,11 @@ input {
     padding: 3px 0px 3px 3px;
     margin: 5px 1px 3px 0px;
     border: 1px solid var(--rust);
+    background-color: var(--orange-peel);
+  }
+
+  input:invalid:focus {
+    border: 3px solid red;
   }
 
 label{
@@ -88,4 +109,9 @@ label{
 .names, .password{
     display: flex;
     gap: 50px;
+}
+
+.field-confirm{
+    margin-top: 30px;
+    margin-left: 3px;
 }

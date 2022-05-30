@@ -10,7 +10,13 @@
     <title>Book a test drive</title>
 </head>
 <body>
-    <div class="hero"></div>
+    <div class="hero">
+        <div>
+            <img src="./marquee.png" alt="" srcset="">
+            <h2>Marquee Brands</h2>
+        </div>
+        
+    </div>
     <div class="main">
         <div class="blurb">
             <h1>Book a test drive</h1>
@@ -42,7 +48,7 @@
                 </div>
                 <div class="text form-group field-phoneNumber">
                     <label for="phoneNumber" class="label">PHONE NUMBER<span class="tooltip-element" tooltip="Phone Number">?</span></label>
-                    <input type="tel" placeholder="Phone Number" class="form-control" name="phoneNumber" access="false" id="phoneNumber" title="Phone Number">
+                    <input type="tel" placeholder="Phone Number" class="form-control" name="phoneNumber" access="false" id="phoneNumber" title="Phone Number" pattern="[0-9]{5,20}">
                 </div>
                 <div class="password">
                     <div>
@@ -53,7 +59,7 @@
                     </div>
                     <div>
                         <div class="form-group field-confirmPassword">
-                            <label for="confirmPassword" class="label">CONFIRM PASSWORD<span class="formbuilder-required">*</span><span class="tooltip-element" tooltip="Confirm Password">?</span></label>
+                            <label for="confirmPassword" class="label">CONFIRM<span class="formbuilder-required">*</span><span class="tooltip-element" tooltip="Confirm Password">?</span></label>
                             <input type="password" placeholder="Confirm Password" class="form-control" name="confirmPassword" access="false" id="confirmPassword" title="Confirm Password" required="required" aria-required="true">
                         </div>
                     </div>

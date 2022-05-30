@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: var(--dark-gray);
+    background-color: #5F5F5C;
     color: var(--silver-chalise);
     display: flex;
     height: 100%;
@@ -16,7 +16,8 @@ body{
 .hero{
     flex: 1;
     background: url(./car_img.jpg);
-    background-size: cover;
+    
+    background-attachment: fixed;
     height: 100vh;
     
 }
@@ -42,6 +43,7 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 20px;
     flex: 2;
+    background-color: var(--dark-gray);
 }
 
 .blurb{
@@ -123,4 +125,9 @@ label{
 
 .hidden{
     display: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--orange-peel);
 }

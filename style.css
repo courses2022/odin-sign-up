@@ -1,0 +1,91 @@
+:root{
+
+    --dark-gray:#040708;
+    --orange-peel:#FD9E03;
+    --silver-chalise:#B0ABA5;
+    --rust:#A43400;
+}
+
+body{
+    background-color: var(--dark-gray);
+    color: var(--silver-chalise);
+    display: flex;
+    height: 100%;
+}
+
+.hero{
+    flex: 1;
+    background: url(./car_img.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.hero> img{
+    min-height: 150vh;
+    opacity: 0.5;
+}
+.main{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    flex: 2;
+}
+
+.blurb{
+    margin-top: calc(20vh + 30px);
+    max-width: 50vw;
+}
+
+.blurb>h1{
+    color: var(--rust);
+    
+}
+
+.blurb>p{
+    font-size: 1.5rem;
+}
+
+button{
+    background-color: var(--rust);
+    padding: 10px 20px;
+}
+
+.form{
+    margin-right: 50px;
+    margin-left: 25px;
+}
+.form-control{
+    padding: 5px 10px;
+    margin: 4px;
+}
+
+input {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #DDDDDD;
+    width: 100%;
+  }
+
+  input:focus {
+    box-shadow: 0 0 5px var(--rust);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid var(--rust);
+  }
+
+label{
+    display: inline-block;
+    width:80%;
+    font-size: smaller;
+    margin-top: 5px;
+    margin-left: 5px;
+    
+}
+.names, .password{
+    display: flex;
+    gap: 50px;
+}

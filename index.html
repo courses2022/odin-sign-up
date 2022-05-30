@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalise.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+    <title>Book a test drive</title>
+</head>
+<body>
+    <div class="hero"></div>
+    <div class="main">
+        <div class="blurb">
+            <h1>Book a test drive</h1>
+            <p>This is not a real booking service! You know you need something like this in your life to help you realise your deepsest dreams. Sign up now to get started</p>
+            <p>You know you want to.</p>
+        </div>
+        <div class="form">
+            <p>Let's do this!</p>
+            <div class="rendered-form">
+                <div class="names">
+                    <div>
+                        <div class="form-group field-firstName">
+                            <label for="firstName" class="text-label">FIRST NAME<span class="required">*</span><span class="tooltip-element" tooltip="First Name">?</span></label>
+                            <input type="text" placeholder="First Name" class="form-control" name="firstName" access="false" maxlength="25" id="firstName" title="First Name" required="required" aria-required="true">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-group field-lastName">
+                            <label for="lastName" class="text-label">LAST NAME<span class="tooltip-element" tooltip="Last Name">?</span></label>
+                            <input type="text" placeholder="Last Name" class="form-control" name="lastName" access="false" maxlength="25" id="lastName" title="Last Name">
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="form-group field-Email">
+                    <label for="Email" class="text-label">EMAIL<span class="required">*</span><span class="tooltip-element" tooltip="Email">?</span></label>
+                    <input type="email" placeholder="Email" class="form-control" name="Email" access="false" maxlength="50" id="Email" title="Email" required="required" aria-required="true">
+                </div>
+                <div class="text form-group field-phoneNumber">
+                    <label for="phoneNumber" class="label">PHONE NUMBER<span class="tooltip-element" tooltip="Phone Number">?</span></label>
+                    <input type="tel" placeholder="Phone Number" class="form-control" name="phoneNumber" access="false" id="phoneNumber" title="Phone Number">
+                </div>
+                <div class="password">
+                    <div>
+                        <div class="form-group field-Password">
+                            <label for="Password" class="text-label">PASSWORD<span class="required">*</span><span class="tooltip-element" tooltip="Password">?</span></label>
+                            <input type="password" placeholder="Password" class="form-control" name="Password" access="false" id="Password" title="Password" required="required" aria-required="true">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-group field-confirmPassword">
+                            <label for="confirmPassword" class="label">CONFIRM PASSWORD<span class="formbuilder-required">*</span><span class="tooltip-element" tooltip="Confirm Password">?</span></label>
+                            <input type="password" placeholder="Confirm Password" class="form-control" name="confirmPassword" access="false" id="confirmPassword" title="Confirm Password" required="required" aria-required="true">
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="button form-group field-confirm">
+                    <button type="button" class="btn-default btn" name="confirm" access="false" style="default" id="confirm">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
